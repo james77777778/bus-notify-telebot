@@ -11,7 +11,7 @@
     ```json
     "message": {
         "chat": {
-            "id": ......
+            "id": 12345678
         }
     }
     ```
@@ -19,7 +19,7 @@
     ```json
     {
         "token": "token_from_botfather",
-        "chat_id": 12345678  // chat_id
+        "chat_id": 12345678
     }
     ```
 4. Setup crontab
