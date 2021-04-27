@@ -22,13 +22,19 @@
         "chat_id": 12345678
     }
     ```
-4. Setup crontab
+4. Test `main.py`
+    ```bash
+    python3 main.py [city] [route_name] [stop_name] [direction]
+    # ex
+    python3 main.py NewTaipei 藍23 樟樹一路口 0
+    ```
+5. Setup crontab
     ```bash
     crontab -e
     ```
     ex: do the query at 17:30 to 17:59 every 3 mins at workday (Mon-Fri)
     ```bash
-    30-59/3 17 * * 1-5 cd path/to/your_repo && venv/bin/python main.py > /tmp/cronlog.txt 2>&1
+    30-59/3 17 * * 1-5 cd path/to/your_repo && venv/bin/python main.py NewTaipei 藍23 樟樹一路口 0 > /tmp/cronlog.txt 2>&1
     # exit by :wq
     ```
 
